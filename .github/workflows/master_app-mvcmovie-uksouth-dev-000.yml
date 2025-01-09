@@ -19,7 +19,7 @@ jobs:
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.x'
+          dotnet-version: '3.1'
 
       - name: Build with dotnet
         run: dotnet build --configuration Release
@@ -53,4 +53,4 @@ jobs:
           app-name: 'app-MVCMovie-uksouth-dev-000'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_81BF34951C86487D96C77C810C445249 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2B977E29B5B6421F990D2D2B9623EEF6 }}
